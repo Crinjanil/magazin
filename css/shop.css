@@ -416,7 +416,6 @@ h1 {
 }
 
 .sale {
-  height: 100vh;
   display: block;
 }
 .sale .container {
@@ -430,8 +429,8 @@ h1 {
 
 .sale-cards {
   margin-top: 1rem;
-  height: 100%;
-  gap: 1rem;
+  margin-bottom: 2rem;
+  gap: 3rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -443,10 +442,14 @@ h1 {
   background-color: white;
 }
 .sale-cards .sale-card .sale-text {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .sale-cards .sale-card .sale-text h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.sale-cards .sale-card img {
+  width: 200px;
+  height: 200px;
 }
 .sale-cards .sale-card button {
   cursor: pointer;
@@ -460,6 +463,26 @@ h1 {
 .sale-cards .sale-card button:hover {
   background-color: #efeeee;
   transition: 0.4s;
+}
+
+.buyers {
+  display: block;
+  height: 100vh;
+}
+.buyers .container {
+  display: block;
+}
+.buyers h1 {
+  text-align: start;
+}
+.buyers h2 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.buyers p {
+  padding-left: 1rem;
 }
 
 * a {
@@ -589,6 +612,8 @@ h1 {
   }
   h6 {
     font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .nav ul a {
     display: block;
@@ -653,5 +678,18 @@ h1 {
   }
   .under-item .description {
     margin: 0 auto;
+  }
+  .sale-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sale-card .sale-text {
+    margin-bottom: 2rem;
+  }
+  .sale-card a {
+    width: 75%;
+  }
+  .sale-card button {
+    width: 100%;
   }
 }/*# sourceMappingURL=shop.css.map */

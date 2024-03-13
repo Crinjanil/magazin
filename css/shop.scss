@@ -406,7 +406,6 @@ h1 {
 }
 
 .sale {
-	height: 100vh;
 	display: block;
 	.container {
 		align-items: start;
@@ -420,8 +419,8 @@ h1 {
 
 .sale-cards {
 	margin-top: 1rem;
-	height: 100%;
-	gap: 1rem;
+	margin-bottom: 2rem;
+	gap: 3rem;
 	display: flex;
 	flex-wrap: wrap;
 	.sale-card {
@@ -431,10 +430,14 @@ h1 {
 		width: 100%;
 		background-color: white;
 		.sale-text {
-			margin-left: 2rem;
+			margin-left: 1rem;
 			h2 {
-				margin-bottom: 2rem;
+				margin-bottom: 1rem;
 			}
+		}
+		img {
+			width: 200px;
+			height: 200px;
 		}
 		button {
 			cursor: pointer;
@@ -449,6 +452,26 @@ h1 {
 				transition: 0.4s;
 			}
 		}
+	}
+}
+
+.buyers {
+	display: block;
+	height: 100vh;
+	.container {
+		display: block;
+	}
+	h1 {
+		text-align: start;
+	}
+	h2 {
+		margin-top: 1rem;
+		font-size: 1.25rem;
+		font-weight: 600;
+		padding: 1rem;
+	}
+	p {
+		padding-left: 1rem;
 	}
 }
 
