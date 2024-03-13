@@ -109,7 +109,7 @@ main {
 .category.active {
   display: none;
 }
-.category h2 {
+.category h2, .category .buyers h3, .buyers .category h3 {
   font-size: 1.25rem;
 }
 .category h3 {
@@ -291,11 +291,11 @@ h6 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   padding: 1rem;
 }
-.item .product-buy h2 {
+.item .product-buy h2, .item .product-buy .buyers h3, .buyers .item .product-buy h3 {
   font-size: 1.3rem;
   color: rgb(230, 153, 12);
 }
-.item .product-buy h2 span {
+.item .product-buy h2 span, .item .product-buy .buyers h3 span, .buyers .item .product-buy h3 span {
   font-size: 0.8rem;
   color: #999999;
   margin-left: 0.2rem;
@@ -444,7 +444,7 @@ h1 {
 .sale-cards .sale-card .sale-text {
   margin-left: 1rem;
 }
-.sale-cards .sale-card .sale-text h2 {
+.sale-cards .sale-card .sale-text h2, .sale-cards .sale-card .sale-text .buyers h3, .buyers .sale-cards .sale-card .sale-text h3 {
   margin-bottom: 1rem;
 }
 .sale-cards .sale-card img {
@@ -467,7 +467,6 @@ h1 {
 
 .buyers {
   display: block;
-  height: 100vh;
 }
 .buyers .container {
   display: block;
@@ -475,7 +474,7 @@ h1 {
 .buyers h1 {
   text-align: start;
 }
-.buyers h2 {
+.buyers h2, .buyers h3 {
   margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -483,6 +482,9 @@ h1 {
 }
 .buyers p {
   padding-left: 1rem;
+}
+.buyers h3 {
+  margin-bottom: 25rem;
 }
 
 * a {
@@ -501,6 +503,13 @@ h1 {
   font-size: 0.75rem;
   margin-top: 1rem;
   color: #999999;
+}
+
+.maksim {
+  color: #999999;
+  font-size: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -647,11 +656,11 @@ h1 {
     margin: 0 auto;
     padding-top: 1rem;
   }
-  .item .product .product-buy h2 {
+  .item .product .product-buy h2, .item .product .product-buy .buyers h3, .buyers .item .product .product-buy h3 {
     font-size: 1rem;
     color: rgb(230, 153, 12);
   }
-  .item .product .product-buy h2 span {
+  .item .product .product-buy h2 span, .item .product .product-buy .buyers h3 span, .buyers .item .product .product-buy h3 span {
     font-size: 0.6rem;
     color: #999999;
     margin-left: 0.2rem;
