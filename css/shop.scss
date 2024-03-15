@@ -154,7 +154,7 @@ main {
 		img {
 			@include size(285px, 150px);
 		}
-		button {
+		.active-btn {
 			cursor: pointer;
 			padding: 0.5rem;
 			border-radius: 100px;
@@ -165,6 +165,10 @@ main {
 				background-color: #ff7255;
 				box-shadow: 0 4px 33px rgba(#ff7255, 25%);
 			}
+		}
+		.soon {
+			@extend .active-btn;
+			background-color: #999999;
 		}
 		&:hover {
 			box-shadow: 0 4px 33px rgba(#000000, 5%);

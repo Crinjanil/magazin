@@ -10,7 +10,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<title>shop</title>
+		<title>new</title>
 	</head>
 	<body>
 		<header>
@@ -22,7 +22,7 @@
 					<ul>
 						<a href="index.html"><li>Каталог</li></a>
 						<a href="sales.html"><li>Акции</li></a>
-						<a href="category.html"><li>Категории</li></a>
+						<a href="category.html"><li>Новинки</li></a>
 						<a href="buyers.html"><li>Покупателям</li></a>
 						<a href="company.html"><li>О нас</li></a>
 					</ul>
@@ -39,7 +39,7 @@
 					<ul>
 						<a href="index.html"><li>Каталог</li></a>
 						<a href="sales.html"><li>Акции</li></a>
-						<a href="category.html"><li>Категории</li></a>
+						<a href="category.html"><li>Новинки</li></a>
 						<a href="buyers.html"><li>Покупателям</li></a>
 						<a href="company.html"><li>О нас</li></a>
 					</ul>
@@ -50,16 +50,100 @@
 		</header>
 		<main>
 			<div class="container">
+				<div class="category">
+					<h2>Цена</h2>
+					<span>От</span>
+					<input class="price" type="number" />
+					<span>До</span>
+					<input class="price" type="number" />
+					<h3>Производитель</h3>
+					<select name="select">
+						<option disabled selected value="value1">Выберите производителя</option>
+						<option value="value2">DNS</option>
+						<option value="value3">Redbubble</option>
+						<option value="value4">OLX Group</option>
+						<option value="value5">eBay Inc.</option>
+						<option value="value6">Amazonen-Werke</option>
+						<option value="value7">Levi Strauss & Co.</option>
+						<option value="value8">Ozon</option>
+						<option value="value9">VK</option>
+						<option value="value10">Walmart Developer Portal</option>
+						<option value="value11">Fix Price IT</option>
+					</select>
+					<div class="check">
+						<input type="checkbox" id="available" />
+						<label for="available">Есть в наличии</label>
+					</div>
+					<button class="category-arrow">▲</button>
+				</div>
+				<button class="category-arrow-down">▼</button>
 				<div class="cards">
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
-					<div class="card-sales"></div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/bonanza.png" />
+							<h4>Bonanza</h4>
+							<p>Сайт для продажи и одежды, и украшений, и растений</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/wildberries.png" />
+							<h4>Wildberries</h4>
+							<p>И ещё один типичный маркетплейс (2024 год все таки)</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/poizon.png" />
+							<h4>Poizon</h4>
+							<p>Сайт по продажам одежды, но в основном кроссовок</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/aliexpress.png" />
+							<h4>AliExpress</h4>
+							<p>Мультитоварный магазин, в котором в основном товары из китая</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/lamoda.png" />
+							<h4>Lamoda</h4>
+							<p>Магазин одежды, обуви, косметики, парфюмерии и т.д.</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
+					<div class="card">
+						<a href="#">
+							<img src="./images/petrovich.png" />
+							<h4>Petrovich</h4>
+							<p>Магазин строительных материалов и товаров для ремонта</p>
+							<div class="card-price">
+								<h5>999999₽</h5>
+								<a href="#"> <button class="soon">Скоро!</button></a>
+							</div></a
+						>
+					</div>
 				</div>
 			</div>
 		</main>

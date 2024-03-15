@@ -159,7 +159,7 @@ main {
   width: 285px;
   height: 150px;
 }
-.cards .card button {
+.cards .card .active-btn, .cards .card .soon {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 100px;
@@ -167,9 +167,12 @@ main {
   background-color: #35ade1;
   color: white;
 }
-.cards .card button:hover {
+.cards .card .active-btn:hover, .cards .card .soon:hover {
   background-color: #ff7255;
   box-shadow: 0 4px 33px rgba(255, 114, 85, 0.25);
+}
+.cards .card .soon {
+  background-color: #999999;
 }
 .cards .card:hover {
   box-shadow: 0 4px 33px rgba(0, 0, 0, 0.05);
