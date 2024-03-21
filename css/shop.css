@@ -5,16 +5,39 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  color: #000000;
+}
+
 body {
   background-color: #f6f6f6;
+  color: #000000;
 }
 body.open {
   overflow: hidden;
+}
+body.active1 {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+body.active1 a {
+  color: #ffffff;
 }
 
 header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   background: #fff;
+}
+header .container {
+  align-items: center;
+}
+
+.header.active1 {
+  background-color: #0f0f0f;
+}
+
+.footer.active1 {
+  background-color: #0f0f0f;
 }
 
 footer {
@@ -61,11 +84,9 @@ main {
   float: left;
   padding: 0.75rem;
   text-decoration: none;
-  color: black;
 }
 .nav ul a:hover {
   background-color: black;
-  color: white;
 }
 
 .reg {
@@ -85,7 +106,6 @@ main {
   transition: 0.4s;
 }
 .reg a {
-  color: #fff;
   font-size: 1rem;
   padding: 20px;
   text-decoration: none;
@@ -109,6 +129,10 @@ main {
 .category.active {
   display: none;
 }
+.category.active1 {
+  background-color: #0f0f0f;
+  border: 1px white solid;
+}
 .category h2, .category .buyers h3, .buyers .category h3 {
   font-size: 1.25rem;
 }
@@ -127,6 +151,7 @@ main {
   width: 140px;
   margin-right: 1rem;
   margin-top: 0.5rem;
+  border: 1px black solid;
 }
 .category .check {
   margin-top: 1.5rem;
@@ -260,7 +285,6 @@ h6 {
   width: 100%;
   height: 400px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background: #fff;
   margin-top: 1rem;
   border-radius: 10px;
   padding: 1rem;
@@ -346,7 +370,6 @@ h6 {
   width: 25%;
   height: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background: #fff;
   border-radius: 10px;
 }
 .under-item .reviews .review, .under-item .mobile-reviews .review {
@@ -388,7 +411,6 @@ h6 {
   width: 75%;
   height: 100%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background: #fff;
   border-radius: 10px;
 }
 .under-item .description .description-content {
@@ -442,7 +464,6 @@ h1 {
   justify-content: space-between;
   padding: 1.25rem;
   width: 100%;
-  background-color: white;
 }
 .sale-cards .sale-card .sale-text {
   margin-left: 1rem;
@@ -497,11 +518,9 @@ h1 {
 * a h4 {
   font-size: 1.25rem;
   margin-top: 0.25rem;
-  color: black;
 }
 * a h5 {
   font-size: 1.25rem;
-  color: black;
 }
 * a p {
   font-size: 0.75rem;
@@ -557,7 +576,6 @@ h1 {
     width: 210px;
     height: 300px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background: #fff;
   }
   .cards .card img {
     width: 195px;
@@ -590,7 +608,6 @@ h1 {
   }
   main .container .cards .card {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background: #fff;
     margin: auto;
   }
   main .category {

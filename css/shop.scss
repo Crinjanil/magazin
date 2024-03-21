@@ -14,21 +14,51 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+a {
+	color: #000000;
+}
+
 body {
 	background-color: #f6f6f6;
+	color: #000000;
 	&.open {
 		overflow: hidden;
+	}
+	&.active1 {
+		background-color: #0f0f0f;
+		color: #ffffff;
+	}
+	&.active1 a {
+		color: #ffffff;
 	}
 }
 
 header {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	background: #fff;
+	.container {
+		align-items: center;
+	}
+}
+
+.header {
+	&.active1 {
+		background-color: #0f0f0f;
+	}
+}
+
+.footer {
+	&.active1 {
+		background-color: #0f0f0f;
+	}
 }
 
 footer {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	background: #fff;
+	// background-image: linear-gradient(45deg, #f8a261, #ff0000),
+	// 	url(https://sotni.ru/wp-content/uploads/2023/08/fon-dlia-avatarki-14.webp);
+	// background-blend-mode: overlay;
 	p {
 		margin: auto 0;
 		margin-left: 0.75rem;
@@ -62,10 +92,10 @@ main {
 			float: left;
 			padding: 0.75rem;
 			text-decoration: none;
-			color: black;
+			// color: black;
 			&:hover {
 				background-color: black;
-				color: white;
+				// color: white;
 			}
 		}
 	}
@@ -84,7 +114,7 @@ main {
 		}
 	}
 	a {
-		color: #fff;
+		// color: #fff;
 		font-size: 1rem;
 		padding: 20px;
 		text-decoration: none;
@@ -107,6 +137,10 @@ main {
 	&.active {
 		display: none;
 	}
+	&.active1 {
+		background-color: #0f0f0f;
+		border: 1px white solid;
+	}
 	h2 {
 		font-size: 1.25rem;
 	}
@@ -125,6 +159,7 @@ main {
 		width: 140px;
 		margin-right: 1rem;
 		margin-top: 0.5rem;
+		border: 1px black solid;
 	}
 	.check {
 		margin-top: 1.5rem;
@@ -252,7 +287,6 @@ h6 {
 .item {
 	@include size(100%, 400px);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	background: #fff;
 	margin-top: 1rem;
 	border-radius: 10px;
 	padding: 1rem;
@@ -334,7 +368,7 @@ h6 {
 		padding: 1rem;
 		@include size(25%, 50%);
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		background: #fff;
+
 		border-radius: 10px;
 		.review {
 			margin-top: 0.5rem;
@@ -375,7 +409,6 @@ h6 {
 		padding: 1rem;
 		@include size(75%, 100%);
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		background: #fff;
 		border-radius: 10px;
 		.description-content {
 			display: flex;
@@ -432,7 +465,6 @@ h1 {
 		justify-content: space-between;
 		padding: 1.25rem;
 		width: 100%;
-		background-color: white;
 		.sale-text {
 			margin-left: 1rem;
 			h2 {
@@ -488,11 +520,9 @@ h1 {
 	h4 {
 		font-size: 1.25rem;
 		margin-top: 0.25rem;
-		color: black;
 	}
 	h5 {
 		font-size: 1.25rem;
-		color: black;
 	}
 	p {
 		font-size: 0.75rem;
